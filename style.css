@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #6f5cfe;
+    --red: #ff1414;
+    --white: #ffffff;
+    --gray: #929292;
+    --dark-gray: #6b7280;
+    --light-gray: #e8e8e8;
+
+}
+
+html {
+    /* 16px = 100% */
+    /* 1px = 6.25% */
+    /* 14px = 87.5% */
+    /* 1rem = 14px; */
+    font-size: 87.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--white);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0rem 3rem 1rem 3rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: -1;
+
+    .left-bg{
+        background-color: var(--white);
+    }
+    
+    .right-bg{
+        background-color: #7867ff;
+        /* background-color: var(--blue); */
+    }
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 12px;
+    color: var(--dark-gray);
+}
+
+.navbar {
+    padding: 1rem 0;
+    color: var(--blue);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.author {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.version {
+    font-size: 12px;
+    color: var(--gray);
+    text-align: center;
+    background-color: #efefef;
+    padding: 3px 12px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--light-gray);
+}
+
+.grid-two--cols {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+
+.UI-section {
+    position: relative;
+    padding: 30PX 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 5rem;
+}
+
+.toast-message {
+    position: absolute;
+    width: 155px;
+    height: 87px;
+    top: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#time {
+    display: block;
+    font-size: 24px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: 600;
+}
+
+#toast-text {
+    display: none;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+img {
+    width: 40rem;
+    height: auto;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
+.copyright {
+    margin-bottom: 0PX;
+}
+
+.form-section {
+    width: 270px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: var(--gray);
+    font-size: 12px;
+}
+
+.input-serverId {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#checkbox {
+    width: 30px;
+    aspect-ratio: 1;
+    background-color: var(--green);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    user-select: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+#checkbox:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+}
+
+input[type="text"],
+textarea {
+    color: var(--dark-gray);
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+input:disabled {
+    background-color: #e9ecef !important;
+    opacity: 0.6;
+}
+
+input:focus,
+textarea:focus {
+    scale: 1.01;
+    outline: none;
+    box-shadow: rgb(197, 193, 253) 0px 4px 12px;
+}
+
+textarea {
+    resize: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+#clearForm {
+    background-color: #fff;
+    color: var(--red);
+
+    &:hover {
+        box-shadow: rgb(255, 143, 143) 0px 4px 12px;
+    }
+}
+
+#openSCard {
+    border: none;
+    color: var(--blue);
+    background-color: var(--white);
+
+    &:hover {
+        box-shadow: rgb(169, 163, 249) 0px 4px 12px;
+    }
+}
+
+#openSOA {
+    border: none;
+    color: var(--blue);
+    background-color: var(--white);
+
+    &:hover {
+        box-shadow: rgb(169, 163, 249) 0px 4px 12px;
+    }
+}

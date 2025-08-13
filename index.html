@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OLink - By Uttam</title>
+    <!-- <link rel="icon" type="image/png" href="./favicon.ico"> -->
+    <link rel="icon" type="image/png" href="./images/favicon.ico?v=2">
+
+
+</head>
+
+<body>
+    <div class="background">
+        <div class="left-bg"></div>
+        <div class="right-bg"></div>
+    </div>
+    <div class="main">
+        <div class="card ">
+            <div class="navbar ">
+                <div class="container">
+                    <h1 class="logo">OLink<span class="author"> - Developed by Uttam</span></h1>
+                    <div class="version">v1.0</div>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <div class="grid-two--cols">
+                <div class="UI-section">
+                    <img class="UI-image" src="./images/hello.svg" alt="UI-image">
+                    <p class="copyright">Copyright © 2025 . All rights reserved.</p>
+                    <div class="toast-message">
+                        <span id="toast-text"></span>
+                        <span id="time"></span>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="serverId">Server ID:</label>
+                        <div class="input-serverId">
+                            <input type="text" id="serverId" />
+                            <div id="checkbox" role="checkbox" aria-checked="true"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dataInput">Enter Loan IDs (one per line):</label>
+                        <textarea id="dataInput" rows="20"></textarea>
+                    </div>
+
+                    <div class="button-group">
+                        <button id="clearForm">Clear</button>
+                        <button id="openSCard">SCard</button>
+                        <button id="openSOA">SOA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- https://192.168.88.220/convoque/HFCL_SOA.jsp?rAC=1234567890 -->
+<!-- https://192.168.88.220/convoque/HFCL_StatCard.jsp?acNo=1234567890 -->
