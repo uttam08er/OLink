@@ -225,7 +225,6 @@ label {
 
 input[type="text"],
 textarea {
-    font-family: 'Poppins', sans-serif;
     color: var(--dark-gray);
     width: 100%;
     padding: 8px 10px;
