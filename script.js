@@ -113,7 +113,7 @@ const openTabs = (id) => {
         checkBoxChecked();
         if (id === 'openSCard') {
             try {
-                dataItems.forEach(url => window.open(`https://192.168.88.${serverId}/convoque/HFCL_StatCard.jsp?acNo=${url}`, '_blank'));
+                dataItems.forEach(url => window.open(`https://172.36.255.${serverId}/convoque/HFCL_StatCard.jsp?acNo=${url}`, '_blank'));
             } catch (error) {
                 showToast("Error opening tabs!");
                 console.log(error);
@@ -122,7 +122,7 @@ const openTabs = (id) => {
         }
         else if (id === 'openSOA') {
             try {
-                dataItems.forEach(url => window.open(`hhttps://192.168.88.${serverId}/convoque/HFCL_SOA.jsp?rAC=${url}`, '_blank'));
+                dataItems.forEach(url => window.open(`hhttps://172.36.255.${serverId}/convoque/HFCL_SOA.jsp?rAC=${url}`, '_blank'));
             } catch (error) {
                 showToast("Error opening tabs!");
                 console.log(error);
